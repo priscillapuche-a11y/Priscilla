@@ -1,0 +1,76 @@
+
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Priscilla C. Puche | Biotechnology Leader</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <script>
+      tailwind.config = {
+        darkMode: 'class',
+        theme: {
+          extend: {
+            colors: {
+              bio: {
+                teal: '#0D9488',
+                green: '#10B981',
+                coral: '#FB7185',
+                gold: '#FBBF24',
+                dark: '#0F172A',
+                light: '#F8FAFC'
+              }
+            },
+            fontFamily: {
+              sans: ['Inter', 'sans-serif'],
+            }
+          }
+        }
+      }
+    </script>
+    <style>
+      body {
+        font-family: 'Inter', sans-serif;
+      }
+      .glass {
+        background: rgba(255, 255, 255, 0.7);
+        backdrop-filter: blur(10px);
+        border: 1px solid rgba(255, 255, 255, 0.2);
+      }
+      .dark .glass {
+        background: rgba(15, 23, 42, 0.7);
+        border: 1px solid rgba(255, 255, 255, 0.1);
+      }
+      .skill-tag:hover {
+        box-shadow: 0 0 15px rgba(13, 148, 136, 0.4);
+      }
+      .timeline-dot::after {
+        content: '';
+        position: absolute;
+        width: 2px;
+        background: #0D9488;
+        top: 24px;
+        bottom: -24px;
+        left: 50%;
+        transform: translateX(-50%);
+      }
+      .timeline-item:last-child .timeline-dot::after {
+        display: none;
+      }
+    </style>
+<script type="importmap">
+{
+  "imports": {
+    "lucide-react": "https://esm.sh/lucide-react@^0.563.0",
+    "react-dom/": "https://esm.sh/react-dom@^19.2.4/",
+    "react/": "https://esm.sh/react@^19.2.4/",
+    "react": "https://esm.sh/react@^19.2.4"
+  }
+}
+</script>
+</head>
+<body class="bg-bio-light dark:bg-bio-dark text-slate-800 dark:text-slate-100 transition-colors duration-300">
+    <div id="root"></div>
+</body>
+</html>
