@@ -122,7 +122,6 @@ const App: React.FC = () => {
         <section id="contact" className="py-24">
           <div className="container mx-auto px-6">
             <div className="max-w-5xl mx-auto glass rounded-[40px] p-12 shadow-2xl overflow-hidden relative">
-              {/* Abstract decorative circles */}
               <div className="absolute -top-10 -right-10 w-40 h-40 bg-bio-teal/10 rounded-full blur-2xl"></div>
               <div className="absolute -bottom-10 -left-10 w-40 h-40 bg-bio-coral/10 rounded-full blur-2xl"></div>
               
